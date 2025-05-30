@@ -46,7 +46,7 @@ cd python-labs
 python -m venv venv
 ## Then activate it:
 venv\Scripts\activate
-## (venv) C:\Users\YourName\python-labs>
+(venv) C:\Users\YourName\python-labs>
 ---
 ### ✔️ Step 4: Install bcrypt
 pip install bcrypt
@@ -56,6 +56,7 @@ Create your script file in the terminal:
 notepad password_security.py
 
 ### Paste the following code inside password_security.py, then save and close it:
+```python
 import bcrypt
 
 # Ask the user to enter a password
