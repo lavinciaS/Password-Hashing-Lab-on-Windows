@@ -39,7 +39,6 @@ This is a beginner-friendly lab to learn how to securely hash and verify passwor
 
 Open Command Prompt or PowerShell and run:
 <pre>
-```python
 mkdir python-labs
 cd python-labs
 </pre>
@@ -47,32 +46,27 @@ cd python-labs
 ### ✔️ Step 3: Create a Virtual Environment
 - In the same terminal:
 <pre>
-```python
 python -m venv venv
 </pre>
 - Then activate it:
 <pre>
-```python
 venv\Scripts\activate
 (venv) C:\Users\YourName\python-labs>
 </pre>
 ---
 ### ✔️ Step 4: Install bcrypt
 <pre>
-```python
 pip install bcrypt
 </pre>
 ---
 ### ✅ Step 5: Create Your Python Script
 Create your script file in the terminal:
 <pre>
-```python
 notepad password_security.py
 </pre>
 
 ### Paste the following code inside password_security.py, then save and close it:
 <pre>
-```python
 import bcrypt
 
 # Ask the user to enter a password
@@ -84,7 +78,7 @@ hashed_password = bcrypt.hashpw(password, salt)
 
 print(f"🔒 Hashed password: {hashed_password.decode()}")
 
-# Ask user to re-enter the password
+# Ask the user to re-enter the password
 password_check = input("Re-enter your password for verification: ").encode('utf-8')
 
 # Verify the password
@@ -97,7 +91,9 @@ else:
 ---
 ### ✅ Step 6: Run Your Script
 In the terminal:
+<pre>
 python password_security.py
+</pre>
 ---
 ## You will:
 
