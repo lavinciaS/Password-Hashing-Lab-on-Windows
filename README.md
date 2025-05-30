@@ -57,19 +57,19 @@ notepad password_security.py
 
 ### Paste the following code inside password_security.py, then save and close it:
 import bcrypt
-# Ask the user to enter a password
+//Ask the user to enter a password
 password = input("Enter your password: ").encode('utf-8')
 
-# Generate salt and hash the password
+//Generate salt and hash the password
 salt = bcrypt.gensalt()
 hashed_password = bcrypt.hashpw(password, salt)
 
 print(f"🔒 Hashed password: {hashed_password.decode()}")
 
-# Ask user to re-enter the password
+//Ask user to re-enter the password
 password_check = input("Re-enter your password for verification: ").encode('utf-8')
 
-# Verify the password
+//Verify the password
 if bcrypt.checkpw(password_check, hashed_password):
     print("✅ Password is correct!")
 else:
