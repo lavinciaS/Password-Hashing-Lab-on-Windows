@@ -38,24 +38,37 @@ This is a beginner-friendly lab to learn how to securely hash and verify passwor
 ### ✔️ Step 2: Open Terminal and Create a Project Folder
 
 Open Command Prompt or PowerShell and run:
+<pre>
+```python
 mkdir python-labs
 cd python-labs
-
+</pre>
 ---
 ### ✔️ Step 3: Create a Virtual Environment
 - In the same terminal:
+<pre>
+```python
 python -m venv venv
-
-## Then activate it:
+</pre>
+- Then activate it:
+<pre>
+```python
 venv\Scripts\activate
 (venv) C:\Users\YourName\python-labs>
+</pre>
 ---
 ### ✔️ Step 4: Install bcrypt
+<pre>
+```python
 pip install bcrypt
+</pre>
 ---
 ### ✅ Step 5: Create Your Python Script
 Create your script file in the terminal:
+<pre>
+```python
 notepad password_security.py
+</pre>
 
 ### Paste the following code inside password_security.py, then save and close it:
 <pre>
