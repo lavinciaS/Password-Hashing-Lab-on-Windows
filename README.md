@@ -24,12 +24,13 @@ This is a beginner-friendly lab to learn how to securely hash and verify passwor
 
 ## 🧪 Lab Instructions
 
-### ✔️ Step 1: Install Python
+## ✔️ Step 1: Install Python
 
 - Go to https://www.python.org/downloads/  
 - Download and install Python 3.x  
 - During installation, check this box:
-###✅ Add Python to PATH
+
+✅ Add Python to PATH
 - Click **Install Now**
 
 ---
@@ -41,9 +42,10 @@ mkdir python-labs
 cd python-labs
 
 ---
-###✔️ Step 3: Create a Virtual Environment
+### ✔️ Step 3: Create a Virtual Environment
 - In the same terminal:
 python -m venv venv
+
 ## Then activate it:
 venv\Scripts\activate
 (venv) C:\Users\YourName\python-labs>
@@ -56,6 +58,7 @@ Create your script file in the terminal:
 notepad password_security.py
 
 ### Paste the following code inside password_security.py, then save and close it:
+<pre>
 ```python
 import bcrypt
 
@@ -76,7 +79,7 @@ if bcrypt.checkpw(password_check, hashed_password):
     print("✅ Password is correct!")
 else:
     print("❌ Password is incorrect.")
-
+</pre>
 
 ---
 ### ✅ Step 6: Run Your Script
